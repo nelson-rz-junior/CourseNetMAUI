@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppNumeroDaSorte.MainPage">
-    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <VerticalStackLayout VerticalOptions="Center">
         <Image Source="logo_green.svg" WidthRequest="74" HeightRequest="115" />
         <Label x:Name="AppName" Text="Número da sorte" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#00AB37" Margin="0,20,0,120" />
         <VerticalStackLayout x:Name="ContainerLuckNumbers" IsVisible="false">
