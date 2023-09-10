@@ -16,4 +16,9 @@ public partial class Page2 : ContentPage
     {
         Navigation.PopAsync();
     }
+
+    protected override bool OnBackButtonPressed()
+    {
+        return true;
+    }
 }
