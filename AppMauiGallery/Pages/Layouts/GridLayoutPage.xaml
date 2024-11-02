@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Layouts.GridLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridLayoutPage">
+
+    <!--  Componente Grid permite sobreposição de elementos  -->
+
+    <Grid
+        Margin="20"
+        Padding="1"
+        BackgroundColor="Black"
+        ColumnDefinitions="6*,Auto,2*,2*"
+        ColumnSpacing="1"
+        RowDefinitions="50,100,30"
+        RowSpacing="1">
+
+        <!--  Larguras definidas proporcionalmente com (* = espaço disponível) e uma automática (Auto = espaço pcupado por conteúdo)  -->
+        <!--
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        -->
+
+        <!--  Posicionamento padrão na primeira linha e primeira coluna  -->
+        <BoxView Color="LightGreen" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Hello World!"
+            VerticalOptions="Center" />
+
+        <!--  Posicionado na primeira linha e segunda coluna, com largura fixada  -->
+        <BoxView
+            Grid.Row="0"
+            Grid.Column="1"
+            WidthRequest="50"
+            Color="ForestGreen" />
+
+        <!--  Posicionado na primeira linha e terceira coluna, com mesclagem (span) de linha e coluna  -->
+        <BoxView
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Color="DarkGreen" />
+        <Label
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Center"
+            Text="Olá Mundo!"
+            TextColor="White"
+            VerticalOptions="Center" />
+
+        <!--  Posicionado na segunda linha e primeira coluna  -->
+        <BoxView Grid.Row="1" Color="Orange" />
+
+        <!--  Posicionado na segunda linha e segunda coluna  -->
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            Color="IndianRed" />
+
+        <!--  Posicionado na terceira linha,  com altura fixada e mesclagem de colunas  -->
+        <BoxView
+            Grid.Row="2"
+            Grid.ColumnSpan="4"
+            Color="White" />
+    </Grid>
+</ContentPage>

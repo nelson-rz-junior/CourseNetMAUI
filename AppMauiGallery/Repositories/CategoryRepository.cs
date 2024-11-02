@@ -19,6 +19,18 @@ public class CategoryRepository
                         Title = "StackLayout",
                         Description = "Organização sequencial dos elementos.",
                         Page = typeof(StackLayoutPage)
+                    },
+                    new()
+                    {
+                        Title = "Grid",
+                        Description = "Organiza os elementos dentro de uma tabela.",
+                        Page = typeof(GridLayoutPage)
+                    },
+                    new()
+                    {
+                        Title = "AbsoluteLayout",
+                        Description = "Liberdade total para posicionar e dimensionar os elementos na tela.",
+                        Page = typeof(AbsoluteLayoutPage)
                     }
                 }
             }
