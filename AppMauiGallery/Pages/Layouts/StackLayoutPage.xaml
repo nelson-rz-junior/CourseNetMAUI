@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Layouts.StackLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StackLayoutPage">
+
+    <StackLayout
+        Margin="20"
+        Padding="20"
+        BackgroundColor="AliceBlue"
+        Orientation="Vertical"
+        Spacing="10">
+
+        <Label Text="Hello World!" />
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Button HorizontalOptions="Start" Text="Hello World 1!" />
+            <Button HorizontalOptions="Start" Text="Hello World 2!" />
+        </StackLayout>
+
+        <VerticalStackLayout
+            Padding="10"
+            BackgroundColor="Aquamarine"
+            Spacing="10">
+
+            <Label Text="Hello World 1!" />
+            <Label Text="Hello World 2!" />
+
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout
+            Padding="10"
+            BackgroundColor="Aquamarine"
+            Spacing="20">
+
+            <Label Text="Hello World 1!" />
+            <Label Text="Hello World 2!" />
+
+        </HorizontalStackLayout>
+
+        <Button
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            Text="Hello World!"
+            WidthRequest="200" />
+
+    </StackLayout>
+</ContentPage>
