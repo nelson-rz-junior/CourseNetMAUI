@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Layouts.FlexLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexLayoutPage">
+    <!--
+        Padrão: Direction="Row" (conteúdo ocupando somente 1 linha)
+        Direction="Column" (conteúdo ocupando somente 1 coluna)
+        Atributo "Direction" com sufixo "Reverse" espelha as linhas ou colunas, invertendo ordem e posicionamento
+    -->
+
+    <!--
+        Padrão: AlignItems="Stretch" (esticando a linha ou a coluna, dependendo do atributo "Direction")
+        Se Direction="Row" então o atributo "AlignItems" atua no eixo Y (vertical)
+        Se Direction="Column" então o atributo "AlignItems" atua no eixo X (horizontal)
+        O atributo "AlignItems" atua no eixo X (horizontal) se Direction="Column"
+        O atributo "AlignItems" atua no eixo Y (vertical) se Direction="Row"
+    -->
+
+    <!--
+        Padrão: JustifyContent="Start" (iniciando na esquerda)
+        O atributo "JustifyContent" atua no eixo oposto ao do atributo "AlignItems" (se "AlignItems" atuar no eixo X, então "JustifyContent" irá atuar no eixo Y)
+    -->
+
+    <!--
+        Padrão: Wrap="NoWrap"
+        O atributo "Wrap" atua no sentido de permitir a exibição plena dos conteúdos, gerando novas linhas de conteúdo, se necessário
+    -->
+
+    <!--
+        Padrão: AlignItems="Stretch" (sem alinhar e condensar o conteúdo)
+        O atributo "AlignItems" atua no sentido de permitir a exibição condensada dos elementos
+    -->
+
+    <!--  O atributo "FlexLayout.AlignSelf" atua somente no alinhamento do elemento no qual é declarado (sobrepondo o atributo "AlignItems")  -->
+
+    <!--  O atributo "FlexLayout.Order" sobrepõe a ordem natural de apresentação dos elementos  -->
+
+    <!--
+        O atributo "FlexLayout.Basis" utiliza o mesmo eixo do atributo "JustifyContent" fixando um valor para altura ou largura do elemento (fixo ou porcentagem)
+    -->
+
+    <!--
+        Padrão: FlexLayout.Shrink="1" (sem priorização)
+        O atributo "FlexLayout.Shrink" prioriza a apresentação de todo conteúdo do elemento (evita ocultação de conteúdo)
+    -->
+
+    <!--
+        O atributo "FlexLayout.Grow" utiliza o mesmo eixo do atributo "JustifyContent" aumentando a altura ou largura do elemento, para ocupar o máximo de espaço disponível
+    -->
+    <FlexLayout
+        AlignContent="Start"
+        AlignItems="Start"
+        Direction="Row"
+        JustifyContent="SpaceAround"
+        Wrap="Wrap">
+        <Label
+            Padding="10"
+            BackgroundColor="RosyBrown"
+            FlexLayout.Grow="1"
+            FlexLayout.Order="1"
+            Text="Content 01"
+            TextColor="White" />
+        <Label
+            Padding="10"
+            BackgroundColor="SandyBrown"
+            FlexLayout.AlignSelf="Center"
+            FlexLayout.Basis="25%"
+            FlexLayout.Order="0"
+            Text="Content 02"
+            TextColor="White" />
+        <Label
+            Padding="10"
+            BackgroundColor="SaddleBrown"
+            FlexLayout.AlignSelf="End"
+            FlexLayout.Order="2"
+            FlexLayout.Shrink="0"
+            Text="Content 1234567890"
+            TextColor="White" />
+        <Label
+            Padding="10"
+            BackgroundColor="Brown"
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Grow="1"
+            FlexLayout.Order="4"
+            Text="Content 04"
+            TextColor="White" />
+        <Label
+            Padding="10"
+            BackgroundColor="BlueViolet"
+            FlexLayout.Order="3"
+            Text="Content 9876543210"
+            TextColor="White" />
+    </FlexLayout>
+
+</ContentPage>
