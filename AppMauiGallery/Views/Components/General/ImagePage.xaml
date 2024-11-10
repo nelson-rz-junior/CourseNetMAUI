@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Views.Components.General.ImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImagePage">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <Image
+                Aspect="AspectFit"
+                Background="LightGray"
+                HeightRequest="100"
+                Source="https://images.unsplash.com/photo-1422493757035-1e5e03968f95?fm=jpg"
+                WidthRequest="250" />
+
+            <Image
+                Aspect="AspectFill"
+                Background="LightGray"
+                HeightRequest="100"
+                Source="https://images.unsplash.com/photo-1422493757035-1e5e03968f95?fm=jpg"
+                WidthRequest="250" />
+
+            <Image
+                x:Name="imgBot"
+                Aspect="Center"
+                BackgroundColor="LightGray" />
+
+            <Image x:Name="imgAnimation" IsAnimationPlaying="True" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

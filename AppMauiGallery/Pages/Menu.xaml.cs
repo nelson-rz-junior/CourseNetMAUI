@@ -14,13 +14,26 @@ public partial class Menu : ContentPage
 	{
         var categories = new CategoryRepository().GetCategories();
 
+        int index = 0;
+
 		foreach (var category in categories)
 		{
+            index++;
+
             var lblCategory = new Label
             {
                 Text = category.Name,
                 FontFamily = "OpenSansSemibold"
             };
+
+            if (index == 1)
+            {
+                lblCategory.Margin = new Thickness(0, 10, 0, 0);
+            }
+            else
+            {
+                lblCategory.Margin = new Thickness(0, 20, 0, 0);
+            }
 
 			MenuContainer.Children.Add(lblCategory);
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Views.Components.General.LabelPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LabelPage">
+    <VerticalStackLayout Padding="10">
+        <Label
+            Padding="10"
+            BackgroundColor="Gray"
+            HorizontalTextAlignment="Center"
+            Text="TEXT" />
+
+        <Label
+            Text="Welcome to .NET MAUI!"
+            TextColor="#FF0000"
+            TextDecorations="Strikethrough" />
+
+        <!--  Opacidade (canal alpha)  -->
+        <Label
+            Text="Welcome to .NET MAUI!"
+            TextColor="#99FF0000"
+            TextDecorations="Underline" />
+
+        <Label
+            Text="Welcome to .NET MAUI!"
+            TextColor="#FF0000"
+            TextTransform="Uppercase" />
+
+        <Label
+            Text="Welcome to .NET MAUI!"
+            TextColor="#FF0000"
+            TextTransform="Lowercase" />
+
+        <Label
+            FontAttributes="Italic"
+            FontFamily="IndieFlowerRegular"
+            FontSize="Title"
+            Text="Welcome to .NET MAUI!" />
+
+        <Label
+            FontAttributes="Bold"
+            FontFamily="PacificoRegular"
+            FontSize="20"
+            Text="Welcome to .NET MAUI!" />
+
+        <!--  LineBreakMode = "Head, Medium ou TailTruncation" limitam o conteúdo em apenas uma linha, adicionando reticências  -->
+        <Label
+            LineBreakMode="TailTruncation"
+            LineHeight="1.2"
+            MaxLines="5"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span
+                        FontAttributes="Bold"
+                        Text="Lorem Ipsum"
+                        TextColor="Blue"
+                        TextDecorations="Underline" />
+                    <Span FontAttributes="Italic" Text=" is simply dummy text of the printing and typesetting industry." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label
+            BackgroundColor="LightYellow"
+            FontAttributes="Bold"
+            FontSize="20"
+            HeightRequest="100"
+            HorizontalTextAlignment="Center"
+            Text=".NET MAUI"
+            VerticalTextAlignment="Center" />
+
+        <Label
+            Padding="10"
+            BackgroundColor="Gray"
+            HorizontalTextAlignment="Center"
+            Text="HTML" />
+
+        <Label
+            Padding="10"
+            BackgroundColor="LightGray"
+            Text="&lt;i&gt;Olá mundo!&lt;/i&gt; &lt;br&gt; &lt;strong&gt;Como vai você?&lt;/strong&gt;"
+            TextType="Html" />
+
+        <Label
+            Padding="10"
+            BackgroundColor="LightGray"
+            TextType="Html">
+            <Label.Text>
+                <![CDATA[
+                    <i>Olá mundo!</i> <br> <strong>Como vai você?</strong>
+                ]]>
+            </Label.Text>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>

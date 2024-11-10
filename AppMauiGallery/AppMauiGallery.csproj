@@ -30,6 +30,10 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App icon for Android -->
 		<MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" ForegroundScale="0.65" Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
@@ -54,7 +58,10 @@
 	  <None Remove="Resources\Fonts\Foldit-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Foldit-Medium.ttf" />
 	  <None Remove="Resources\Fonts\Icons.ttf" />
+	  <None Remove="Resources\Fonts\IndieFlower-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Pacifico-Regular.ttf" />
 	  <None Remove="Resources\Images\clock.svg" />
+	  <None Remove="Resources\Images\dotnet_bot.svg" />
 	  <None Remove="Resources\Images\five.svg" />
 	  <None Remove="Resources\Images\four.svg" />
 	  <None Remove="Resources\Images\one.svg" />
@@ -67,6 +74,12 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Update="Resources\Images\dotnet_bot.svg">
+	    <BaseSize>168,208</BaseSize>
+	  </MauiImage>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,6 +102,21 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Menu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\General\BoxViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\General\ButtonPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\General\ImageButtonPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\General\ImagePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\General\LabelPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
