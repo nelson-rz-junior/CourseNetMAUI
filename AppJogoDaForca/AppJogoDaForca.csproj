@@ -43,20 +43,13 @@
 
 	<ItemGroup>
 		<!-- App icon for all other platforms -->
-		<MauiIcon 
-			Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) != 'android'" 
-			Include="Resources\AppIcon\appicon.svg" 
-			ForegroundFile="Resources\AppIcon\appiconfg.svg" />
+		<MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) != 'android'" Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 
 		<!-- App icon for Android -->
-		<MauiIcon 
-			Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" 
-			Include="Resources\AppIcon\appicon.svg" 
-			ForegroundFile="Resources\AppIcon\appiconfg.svg" 
-			ForegroundScale="0.6" />
+		<MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" ForegroundScale="0.6" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" BaseSize="80,192" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
