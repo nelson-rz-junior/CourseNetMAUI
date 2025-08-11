@@ -3,7 +3,7 @@
     x:Class="AppMauiGallery.Views.Components.General.BoxViewPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="BoxViewPage">
+    Title="BoxView Page">
     <VerticalStackLayout Padding="10">
         <BoxView HeightRequest="1" Color="DarkBlue" />
         <BoxView

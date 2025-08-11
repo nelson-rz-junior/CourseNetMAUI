@@ -3,7 +3,7 @@
     x:Class="AppMauiGallery.Pages.Layouts.FlexLayoutPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="FlexLayoutPage">
+    Title="FlexLayout Page">
     <!--
         Padrão: Direction="Row" (conteúdo ocupando somente 1 linha)
         Direction="Column" (conteúdo ocupando somente 1 coluna)

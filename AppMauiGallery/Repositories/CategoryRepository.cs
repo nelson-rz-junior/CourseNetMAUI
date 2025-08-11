@@ -75,6 +75,24 @@ public class CategoryRepository
                         Title = "ImageButton",
                         Description = "Apresenta uma imagem com comportamento de botão.",
                         Page = typeof(ImageButtonPage)
+                    },
+                    new()
+                    {
+                        Title = "Frame",
+                        Description = "Caixa que envolve outros elementos (obsoleto).",
+                        Page = typeof(FramePage)
+                    },
+                    new()
+                    {
+                        Title = "Border",
+                        Description = "Caixa que envolve outros elementos.",
+                        Page = typeof(BorderPage)
+                    },
+                    new()
+                    {
+                        Title = "Shadow",
+                        Description = "Adiciona uma sombra ao elemento.",
+                        Page = typeof(ShadowPage)
                     }
                 }
             }

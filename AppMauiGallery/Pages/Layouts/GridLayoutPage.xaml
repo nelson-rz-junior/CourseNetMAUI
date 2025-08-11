@@ -3,7 +3,7 @@
     x:Class="AppMauiGallery.Pages.Layouts.GridLayoutPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="GridLayoutPage">
+    Title="GridLayout Page">
 
     <!--  Componente Grid permite sobreposição de elementos  -->
 

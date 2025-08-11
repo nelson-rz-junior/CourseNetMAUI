@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Views.Components.General.ShadowPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Shadow Page">
+    <VerticalStackLayout Padding="30">
+        <Border Padding="10" BackgroundColor="White">
+            <Border.Shadow>
+                <Shadow
+                    Brush="DarkOrange"
+                    Opacity="0.7"
+                    Radius="10"
+                    Offset="10,10" />
+            </Border.Shadow>
+            <VerticalStackLayout>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Welcome to .NET MAUI!"
+                    VerticalOptions="Center" />
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

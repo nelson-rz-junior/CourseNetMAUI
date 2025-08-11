@@ -3,7 +3,7 @@
     x:Class="AppMauiGallery.Views.Components.General.ImagePage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ImagePage">
+    Title="Image Page">
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="10">
             <Image
