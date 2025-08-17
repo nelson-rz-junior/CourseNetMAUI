@@ -107,7 +107,13 @@ public class CategoryRepository
                         Title = "Entry",
                         Description = "Campo de entrada de texto de uma única linha.",
                         Page = typeof(EntryPage)
-                    }
+                    },
+                    new()
+                    {
+                        Title = "Editor",
+                        Description = "Campo de entrada de texto de múltiplas linhas.",
+                        Page = typeof(EditorPage)
+                    },
                 }
             }
         };

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Forms.EditorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Editor Page">
+    <VerticalStackLayout Padding="10">
+        <Label HorizontalOptions="Start" Text="Escreva um resumo sobre o texto apresentado: " />
+        <Editor
+            AutoSize="TextChanges"
+            HeightRequest="200"
+            IsReadOnly="False" />
+    </VerticalStackLayout>
+</ContentPage>
