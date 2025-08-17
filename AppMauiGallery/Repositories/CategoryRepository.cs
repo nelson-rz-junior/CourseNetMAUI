@@ -1,4 +1,5 @@
 ﻿using AppMauiGallery.Models;
+using AppMauiGallery.Pages.Forms;
 using AppMauiGallery.Pages.Layouts;
 using AppMauiGallery.Views.Components.General;
 
@@ -93,6 +94,19 @@ public class CategoryRepository
                         Title = "Shadow",
                         Description = "Adiciona uma sombra ao elemento.",
                         Page = typeof(ShadowPage)
+                    }
+                }
+            },
+            new Category
+            {
+                Name = "Formulários",
+                Components = new List<Component>
+                {
+                    new()
+                    {
+                        Title = "Entry",
+                        Description = "Campo de entrada de texto de uma única linha.",
+                        Page = typeof(EntryPage)
                     }
                 }
             }

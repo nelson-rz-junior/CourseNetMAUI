@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Forms.EntryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Entry Page">
+    <VerticalStackLayout Padding="10">
+        <Label HorizontalOptions="Start" Text="Digite o seu nome: " />
+        <Entry
+            BackgroundColor="LightGoldenrodYellow"
+            HorizontalTextAlignment="Center"
+            MaxLength="100"
+            ReturnType="Next"
+            Text="NOME SOBRENOME"
+            TextColor="DarkGreen"
+            TextTransform="Uppercase" />
+
+        <Label HorizontalOptions="Start" Text="Digite a sua senha: " />
+        <Entry
+            BackgroundColor="LightGray"
+            HorizontalTextAlignment="Center"
+            IsPassword="True"
+            ReturnType="Next"
+            Text="12345678" />
+
+        <Label HorizontalOptions="Start" Text="Digite a sua frase secreta: " />
+        <Entry
+            ClearButtonVisibility="WhileEditing"
+            CursorPosition="2"
+            IsSpellCheckEnabled="False"
+            IsTextPredictionEnabled="False"
+            ReturnType="Next"
+            SelectionLength="5"
+            Text="SECRETPHRASE"
+            TextColor="DarkRed" />
+
+        <Label HorizontalOptions="Start" Text="Digite o seu telefone: " />
+        <Entry
+            Keyboard="Telephone"
+            Placeholder="+55 11 99990 9999"
+            PlaceholderColor="DarkGray"
+            ReturnType="Done" />
+
+        <Label HorizontalOptions="Start" Text="Informe a palavra-chave: " />
+        <Entry
+            ClearButtonVisibility="WhileEditing"
+            Completed="Entry_Completed"
+            TextChanged="Entry_TextChanged" />
+        <Label x:Name="lblTextChanged" />
+    </VerticalStackLayout>
+</ContentPage>
