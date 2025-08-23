@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Forms.StepperPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Stepper Page">
+    <VerticalStackLayout Padding="10">
+        <Label Text="Quantos hóspedes?" />
+        <Stepper
+            Increment="2"
+            Maximum="20"
+            Minimum="2"
+            ValueChanged="Stepper_ValueChanged" />
+        <Label x:Name="lblValue" />
+    </VerticalStackLayout>
+</ContentPage>

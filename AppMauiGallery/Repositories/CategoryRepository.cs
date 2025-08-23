@@ -134,10 +134,16 @@ public class CategoryRepository
                     },
                     new()
                     {
+                        Title = "Stepper",
+                        Description = "Cria opções de incrementar ou decrementar um valor.",
+                        Page = typeof(StepperPage)
+                    },
+                    new()
+                    {
                         Title = "Picker",
                         Description = "Caixa de seleção suspensa.",
                         Page = typeof(PickerPage)
-                    },
+                    }
                 }
             }
         };
