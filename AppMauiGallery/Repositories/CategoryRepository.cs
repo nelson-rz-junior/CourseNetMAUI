@@ -114,6 +114,30 @@ public class CategoryRepository
                         Description = "Campo de entrada de texto de múltiplas linhas.",
                         Page = typeof(EditorPage)
                     },
+                    new()
+                    {
+                        Title = "CheckBox",
+                        Description = "Caixa de seleção.",
+                        Page = typeof(CheckBoxPage)
+                    },
+                    new()
+                    {
+                        Title = "RadioButton",
+                        Description = "Botão de opção.",
+                        Page = typeof(RadioButtonPage)
+                    },
+                    new()
+                    {
+                        Title = "Switch",
+                        Description = "Botão de alternância.",
+                        Page = typeof(SwitchPage)
+                    },
+                    new()
+                    {
+                        Title = "Picker",
+                        Description = "Caixa de seleção suspensa.",
+                        Page = typeof(PickerPage)
+                    },
                 }
             }
         };
