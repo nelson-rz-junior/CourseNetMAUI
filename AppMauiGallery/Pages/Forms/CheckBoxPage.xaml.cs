@@ -2,7 +2,7 @@ namespace AppMauiGallery.Pages.Forms;
 
 public partial class CheckBoxPage : ContentPage
 {
-	private List<string> options = new();
+	private readonly List<string> options = [];
 
 	public CheckBoxPage()
 	{

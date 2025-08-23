@@ -6,4 +6,13 @@ public partial class RadioButtonPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+		if (e.Value)
+		{
+			var radioButton = (RadioButton)sender;
+			DisplayAlert("Checked Changed", $"You selected {radioButton.Content}", "OK");
+        }
+    }
 }

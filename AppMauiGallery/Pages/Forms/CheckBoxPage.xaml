@@ -7,7 +7,7 @@
     <VerticalStackLayout Padding="10">
         <Label
             HorizontalOptions="Start"
-            Text="Qual é a sua linguagem de programção preferida?"
+            Text="Quais são suas linguagens de programção preferidas?"
             VerticalOptions="Center" />
         <HorizontalStackLayout>
             <CheckBox

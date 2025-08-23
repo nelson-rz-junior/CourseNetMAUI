@@ -5,9 +5,38 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="RadioButton Page">
     <VerticalStackLayout Padding="10">
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" />
+        <StackLayout>
+            <Label
+                HorizontalOptions="Start"
+                Text="Qual a sua linguagem de programação preferida?"
+                VerticalOptions="Center" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="C#" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="PYTHON" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="JAVA" />
+        </StackLayout>
+        <StackLayout>
+            <Label
+                HorizontalOptions="Start"
+                Text="Qual a linguagem de programação que você menos gosta?"
+                VerticalOptions="Center" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="C#" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="PYTHON" />
+            <RadioButton CheckedChanged="RadioButton_CheckedChanged" Content="JAVA" />
+        </StackLayout>
+        <StackLayout>
+            <Label
+                HorizontalOptions="Start"
+                Text="Qual é o mascote do NET MAUI?"
+                VerticalOptions="Center" />
+            <RadioButton Value="Robot">
+                <!--  Não funciona no Android  -->
+                <RadioButton.Content>
+                    <HorizontalStackLayout>
+                        <Label Text="Robot" />
+                        <Image HeightRequest="20" Source="dotnet_bot.png" />
+                    </HorizontalStackLayout>
+                </RadioButton.Content>
+            </RadioButton>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

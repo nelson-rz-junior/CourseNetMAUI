@@ -117,13 +117,13 @@ public class CategoryRepository
                     new()
                     {
                         Title = "CheckBox",
-                        Description = "Caixa de seleção.",
+                        Description = "Caixa de marcação de escolha múltipla.",
                         Page = typeof(CheckBoxPage)
                     },
                     new()
                     {
                         Title = "RadioButton",
-                        Description = "Botão de opção.",
+                        Description = "Agrupamento de caixas de marcação de escolha única ",
                         Page = typeof(RadioButtonPage)
                     },
                     new()
