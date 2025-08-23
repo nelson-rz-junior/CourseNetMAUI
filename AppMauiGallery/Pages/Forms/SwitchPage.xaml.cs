@@ -6,4 +6,9 @@ public partial class SwitchPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Switch_Toggled(object sender, ToggledEventArgs e)
+    {
+		lblStatus.Text = e.Value ? "Ativado" : "Desativado";
+    }
 }

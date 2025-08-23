@@ -129,7 +129,7 @@ public class CategoryRepository
                     new()
                     {
                         Title = "Switch",
-                        Description = "Botão de alternância.",
+                        Description = "Caixa de marcação de alternância.",
                         Page = typeof(SwitchPage)
                     },
                     new()
