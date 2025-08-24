@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Views.Cells.ImageCellPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImageCell Page">
+    <VerticalStackLayout Padding="10">
+        <TableView>
+            <TableSection Title="Lista de Colaboradores">
+                <ImageCell
+                    Detail="Idade: 33 anos, Cargo: ANALISTA DE SISTEMAS"
+                    DetailColor="Gray"
+                    ImageSource="unnamed.png"
+                    Text="COLABORADOR I"
+                    TextColor="DarkBlue" />
+                <ImageCell
+                    Detail="Idade: 43 anos, Cargo: ANALISTA DE REQUISITOS"
+                    DetailColor="Gray"
+                    ImageSource="unnamed.png"
+                    Text="COLABORADOR II"
+                    TextColor="Purple" />
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

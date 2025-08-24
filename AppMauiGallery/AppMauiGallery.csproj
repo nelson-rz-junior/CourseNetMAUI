@@ -76,7 +76,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\Forms\TimePickerPage.xaml.cs">
+	  <Compile Update="Views\Components\Forms\TimePickerPage.xaml.cs">
 	    <DependentUpon>TimePickerPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
@@ -91,55 +91,70 @@
 	  <MauiXaml Update="AppFlyout.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\CheckBoxPage.xaml">
+	  <MauiXaml Update="Views\Cells\EntryCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\DatePickerPage.xaml">
+	  <MauiXaml Update="Views\Cells\ImageCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\EditorPage.xaml">
+	  <MauiXaml Update="Views\Cells\SwitchCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\EntryPage.xaml">
+	  <MauiXaml Update="Views\Cells\TextCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\PickerPage.xaml">
+	  <MauiXaml Update="Views\Cells\ViewCellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\SearchBarPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\CheckBoxPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\TimePickerPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\DatePickerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\RadioButtonPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\EditorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\SliderPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\EntryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\StepperPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\PickerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\SwitchPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\SearchBarPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Layouts\AbsoluteLayoutPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\TimePickerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Layouts\FlexLayoutPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\RadioButtonPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Layouts\GridLayoutPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\SliderPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Layouts\StackLayoutPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\StepperPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\MainPage.xaml">
+	  <MauiXaml Update="Views\Components\Forms\SwitchPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Menu.xaml">
+	  <MauiXaml Update="Views\Layouts\AbsoluteLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Layouts\FlexLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Layouts\GridLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Layouts\StackLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Menu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\General\BorderPage.xaml">

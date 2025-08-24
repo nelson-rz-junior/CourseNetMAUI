@@ -1,6 +1,7 @@
 ﻿using AppMauiGallery.Models;
 using AppMauiGallery.Pages.Forms;
 using AppMauiGallery.Pages.Layouts;
+using AppMauiGallery.Views.Cells;
 using AppMauiGallery.Views.Components.General;
 
 namespace AppMauiGallery.Repositories;
@@ -44,7 +45,7 @@ public class CategoryRepository
             },
             new Category
             {
-                Name = "Componentes (Views)",
+                Name = "Controles (Views)",
                 Components = new List<Component>
                 {
                     new()
@@ -129,7 +130,7 @@ public class CategoryRepository
                     new()
                     {
                         Title = "Switch",
-                        Description = "Cria um botão ON/OFF.",
+                        Description = "Cria um botão do tipo interruptor ON/OFF.",
                         Page = typeof(SwitchPage)
                     },
                     new()
@@ -167,6 +168,43 @@ public class CategoryRepository
                         Title = "Picker",
                         Description = "Cria uma lista de seleção.",
                         Page = typeof(PickerPage)
+                    }
+                }
+            },
+            new Category
+            {
+                Name = "Células",
+                Components = new List<Component>
+                {
+                    new()
+                    {
+                        Title = "TextCell",
+                        Description = "Apresenta até duas labels onde uma é destinada ao título e outra ao conteúdo.",
+                        Page = typeof(TextCellPage)
+                    },
+                    new()
+                    {
+                        Title = "ImageCell",
+                        Description = "Apresenta uma imagem com duas labels onde uma é destinada ao título e outra ao conteúdo.",
+                        Page = typeof(ImageCellPage)
+                    },
+                    new()
+                    {
+                        Title = "SwitchCell",
+                        Description = "Apresenta uma label e um botão do tipo interruptor ON/OFF.",
+                        Page = typeof(SwitchCellPage)
+                    },
+                    new()
+                    {
+                        Title = "EntryCell",
+                        Description = "Apresenta uma label e um campo de entrada de texto.",
+                        Page = typeof(EntryCellPage)
+                    },
+                    new()
+                    {
+                        Title = "ViewCell",
+                        Description = "Apresenta uma célula com conteúdo personalizado.",
+                        Page = typeof(ViewCellPage)
                     }
                 }
             }
