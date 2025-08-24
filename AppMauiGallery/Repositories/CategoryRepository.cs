@@ -161,6 +161,12 @@ public class CategoryRepository
                         Title = "SearchBar",
                         Description = "Cria uma caixa de pesquisa.",
                         Page = typeof(SearchBarPage)
+                    },
+                    new()
+                    {
+                        Title = "Picker",
+                        Description = "Cria uma lista de seleção.",
+                        Page = typeof(PickerPage)
                     }
                 }
             }

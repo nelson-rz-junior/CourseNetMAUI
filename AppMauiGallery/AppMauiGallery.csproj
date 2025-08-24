@@ -103,6 +103,9 @@
 	  <MauiXaml Update="Pages\Forms\EntryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\Forms\PickerPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Forms\SearchBarPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

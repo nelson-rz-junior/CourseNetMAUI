@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Forms.PickerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Picker Page">
+    <VerticalStackLayout Padding="10">
+        <Picker
+            Title="Select a fruit"
+            SelectedIndexChanged="Picker_SelectedIndexChanged"
+            TitleColor="BlueViolet">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Apple</x:String>
+                    <x:String>Banana</x:String>
+                    <x:String>Cherry</x:String>
+                    <x:String>Date</x:String>
+                    <x:String>Elderberry</x:String>
+                    <x:String>Fig</x:String>
+                    <x:String>Grape</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Label x:Name="lblValue" />
+    </VerticalStackLayout>
+</ContentPage>
