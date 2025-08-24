@@ -140,6 +140,12 @@ public class CategoryRepository
                     },
                     new()
                     {
+                        Title = "Slider",
+                        Description = "Estrutura deslizante para incrementar ou decrementar um valor.",
+                        Page = typeof(SliderPage)
+                    },
+                    new()
+                    {
                         Title = "Picker",
                         Description = "Caixa de seleção suspensa.",
                         Page = typeof(PickerPage)
