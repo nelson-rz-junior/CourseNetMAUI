@@ -123,13 +123,13 @@ public class CategoryRepository
                     new()
                     {
                         Title = "RadioButton",
-                        Description = "Agrupamento de caixas de marcação de escolha única ",
+                        Description = "Agrupamento de caixas de marcação de escolha única.",
                         Page = typeof(RadioButtonPage)
                     },
                     new()
                     {
                         Title = "Switch",
-                        Description = "Caixa de marcação de alternância.",
+                        Description = "Cria um botão ON/OFF.",
                         Page = typeof(SwitchPage)
                     },
                     new()
@@ -149,6 +149,12 @@ public class CategoryRepository
                         Title = "TimePicker",
                         Description = "Caixa de seleção de hora e minuto.",
                         Page = typeof(TimePickerPage)
+                    },
+                    new()
+                    {
+                        Title = "DatePicker",
+                        Description = "Caixa de seleção de datas.",
+                        Page = typeof(DatePickerPage)
                     }
                 }
             }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Pages.Forms.DatePickerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DatePicker Page">
+    <VerticalStackLayout Padding="10">
+        <DatePicker
+            Date="11/26/2025"
+            DateSelected="DatePicker_DateSelected"
+            Format="dd/MM/yyyy"
+            MaximumDate="12/31/2025"
+            MinimumDate="01/01/2025" />
+        <Label x:Name="lblValue" />
+    </VerticalStackLayout>
+</ContentPage>
