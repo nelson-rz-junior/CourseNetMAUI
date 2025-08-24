@@ -76,6 +76,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\Forms\TimePickerPage.xaml.cs">
+	    <DependentUpon>TimePickerPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiImage Update="Resources\Images\dotnet_bot.svg">
 	    <BaseSize>168,208</BaseSize>
 	  </MauiImage>
@@ -94,7 +100,7 @@
 	  <MauiXaml Update="Pages\Forms\EntryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Forms\PickerPage.xaml">
+	  <MauiXaml Update="Pages\Forms\TimePickerPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Forms\RadioButtonPage.xaml">

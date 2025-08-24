@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="AppMauiGallery.Pages.Forms.PickerPage"
+    x:Class="AppMauiGallery.Pages.Forms.TimePickerPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Picker Page">
+    Title="TimePicker Page">
     <VerticalStackLayout Padding="10">
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" />
+        <TimePicker Format="HH:mm:ss" Time="14:20:56" />
     </VerticalStackLayout>
 </ContentPage>

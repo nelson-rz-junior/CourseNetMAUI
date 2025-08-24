@@ -146,9 +146,9 @@ public class CategoryRepository
                     },
                     new()
                     {
-                        Title = "Picker",
-                        Description = "Caixa de seleção suspensa.",
-                        Page = typeof(PickerPage)
+                        Title = "TimePicker",
+                        Description = "Caixa de seleção de hora e minuto.",
+                        Page = typeof(TimePickerPage)
                     }
                 }
             }
