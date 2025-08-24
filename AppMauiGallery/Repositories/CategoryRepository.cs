@@ -147,14 +147,20 @@ public class CategoryRepository
                     new()
                     {
                         Title = "TimePicker",
-                        Description = "Caixa de seleção de hora e minuto.",
+                        Description = "Cria uma caixa de seleção de hora e minuto.",
                         Page = typeof(TimePickerPage)
                     },
                     new()
                     {
                         Title = "DatePicker",
-                        Description = "Caixa de seleção de datas.",
+                        Description = "Cria uma estrutura de seleção de datas.",
                         Page = typeof(DatePickerPage)
+                    },
+                    new()
+                    {
+                        Title = "SearchBar",
+                        Description = "Cria uma caixa de pesquisa.",
+                        Page = typeof(SearchBarPage)
                     }
                 }
             }
