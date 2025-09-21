@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMauiGallery.Views.Lists.ListViewPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ListView Page">
+
+    <ListView
+        x:Name="ctrlListView"
+        HasUnevenRows="True"
+        ItemSelected="ctrlListView_ItemSelected"
+        SelectionMode="Single">
+        <ListView.Header>
+            <Button
+                x:Name="btnCarregarFilmes"
+                BackgroundColor="DarkGray"
+                Clicked="btnCarregarFilmes_Clicked"
+                IsEnabled="True"
+                Text="Carregar filmes" />
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout Padding="10">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            Text="{Binding Name}" />
+                        <Label Text="{Binding Description}" TextColor="Gray" />
+
+                        <HorizontalStackLayout Margin="0,10,0,0">
+                            <Label Margin="0,0,20,0" Text="{Binding LaunchYear}" />
+                            <Label Text="{Binding Duration}" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -3,6 +3,7 @@ using AppMauiGallery.Pages.Forms;
 using AppMauiGallery.Pages.Layouts;
 using AppMauiGallery.Views.Cells;
 using AppMauiGallery.Views.Components.General;
+using AppMauiGallery.Views.Lists;
 
 namespace AppMauiGallery.Repositories;
 
@@ -205,6 +206,31 @@ public class CategoryRepository
                         Title = "ViewCell",
                         Description = "Apresenta uma célula com conteúdo personalizado.",
                         Page = typeof(ViewCellPage)
+                    }
+                }
+            },
+            new Category
+            {
+                Name = "Listas e Coleções",
+                Components = new List<Component>
+                {
+                    new()
+                    {
+                        Title = "TableView",
+                        Description = "Apresenta uma lista de células em linhas separadas organizadas em seções.",
+                        Page = typeof(TableViewPage)
+                    },
+                    new()
+                    {
+                        Title = "Picker",
+                        Description = "Apresenta uma lista de seleção única.",
+                        Page = typeof(PickerListPage)
+                    },
+                    new()
+                    {
+                        Title = "ListView",
+                        Description = "Apresenta uma lista de itens com rolagem vertical.",
+                        Page = typeof(ListViewPage)
                     }
                 }
             }
